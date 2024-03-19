@@ -1,0 +1,2284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.1 on win32)" generated="2024-03-08T17:18:49.604525" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="D:\projet bazimo\Test\test.robot">
+<test id="s1-t1" name="login test" line="6">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:18:49.822029" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:18:50.155081" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:18:53.457508" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:18:53.458642" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:18:49.821019" elapsed="3.641613">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:18:53.462632" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:18:53.463627" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:18:53.463627" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:18:53.463627" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:18:49.820849" elapsed="3.643789">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<status status="FAIL" start="2024-03-08T17:18:49.820031" elapsed="3.645399">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t2" name="Test Gestion" line="9">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:18:53.471233" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:18:53.803501" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:18:57.091447" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:18:57.091447" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:18:53.471233" elapsed="3.620214">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:18:57.091447" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:18:57.091447" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:18:57.091447" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:18:57.091447" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:18:53.471233" elapsed="3.620214">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:18:57.091447" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:18:53.469943" elapsed="3.621504">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t3" name="Lots page" line="13">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:18:57.091447" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:18:57.432848" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:04.812353" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:04.812353" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:18:57.091447" elapsed="7.720906">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:18:57.091447" elapsed="7.720906">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<kw name="Lots" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${Lots breadcrump location}</arg>
+<arg>${Lots breadcrump valeur}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${gestion breadcrump location}</arg>
+<arg>${gestion breadcrump valeur}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:04.812353" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:18:57.091447" elapsed="7.720906">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t4" name="Baux page" line="21">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:04.827820" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:05.176949" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:08.508926" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:08.509746" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:04.827820" elapsed="3.681926">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:08.509746" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:08.509746" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:08.509746" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:08.509746" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:04.827820" elapsed="3.681926">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:08.509746" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:08.509746" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:04.812353" elapsed="3.697393">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t5" name="session de quittancement page" line="25">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:08.509746" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:08.847143" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:12.291612" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:12.292660" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:08.509746" elapsed="3.782914">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:12.292660" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:12.292660" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:12.292660" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:12.292660" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:08.509746" elapsed="3.782914">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:12.292660" elapsed="0.000000"/>
+</kw>
+<kw name="Session de quittancement" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:24.428021" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:08.509746" elapsed="15.918275">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t6" name="tester le nombre de Lots" line="33">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:24.441258" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:24.778729" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:28.140083" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:28.140083" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:24.441258" elapsed="3.698825">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:24.440145" elapsed="3.699938">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="Lots" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${LOTS LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${le vrai nombre de lots}</arg>
+<arg>${nombre de lots expected}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:28.140083" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:24.428021" elapsed="3.712062">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t7" name="tester la fonctionalité des filtre rapide du page baux" line="41">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:28.140083" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:28.478856" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:31.874151" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:31.874151" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:28.140083" elapsed="3.734068">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:28.140083" elapsed="3.734068">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${filtre rapide date de fin location}</arg>
+<arg>${filtre rapide date de fin valeur}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${filtre rapide Prochain break location}</arg>
+<arg>${filtre rapide Prochain break valeur}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${filtre rapide Résilité location}</arg>
+<arg>${filtre rapide Résilité valeur}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${url page Baux}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:31.874151" elapsed="0.000000"/>
+</kw>
+<kw name="tester filtre rapide" owner="Keywords">
+<arg>${filtre rapide date de fin location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:39.965959" elapsed="0.000000"/>
+</kw>
+<kw name="tester filtre rapide" owner="Keywords">
+<arg>${filtre rapide Prochain break location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:39.965959" elapsed="0.000000"/>
+</kw>
+<kw name="tester filtre rapide" owner="Keywords">
+<arg>${filtre rapide Résilité location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:39.965959" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:28.140083" elapsed="11.825876">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t8" name="tester recherche page Baux par actif" line="55">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:39.982250" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:40.310470" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:43.622899" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:43.622899" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:39.982164" elapsed="3.640735">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:39.981250" elapsed="3.641649">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${url page Baux}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${recherche boutton localisation}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${recherche boutton localisation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${recherche input localisation}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i}&gt;50">
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.000000"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${actif}</var>
+<arg>${nom de l'actif}[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Split String" owner="String">
+<var>${actif}</var>
+<arg>${actif}</arg>
+<arg>-</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${recherche input localisation}</arg>
+<arg>${actif}[1][1:]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${le vrai nombre de lots}</arg>
+<arg>${nombre de lots expected}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${fermer bouton recherche}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:43.638471" elapsed="0.000000"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.015572"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${nombre de lots expected}</value>
+<status status="NOT RUN" start="2024-03-08T17:19:43.622899" elapsed="0.015572"/>
+</for>
+<status status="FAIL" start="2024-03-08T17:19:39.980152" elapsed="3.658319">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t9" name="tester recherche page Baux par N°bail" line="84">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:43.638471" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:43.975751" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:47.355182" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:47.355182" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:43.638471" elapsed="3.716711">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:43.638471" elapsed="3.716711">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${url page Baux}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${recherche boutton localisation}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${recherche boutton localisation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${recherche input localisation}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i}&gt;50">
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${actif}</var>
+<arg>(${N°bail})[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${actif}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${recherche input localisation}</arg>
+<arg>${actif}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected1}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${le vrai nombre de lots}</arg>
+<arg>${nombre de lots expected1}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${fermer bouton recherche}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${nombre de lots expected}+1</value>
+<status status="NOT RUN" start="2024-03-08T17:19:47.355182" elapsed="0.000000"/>
+</for>
+<status status="FAIL" start="2024-03-08T17:19:43.638471" elapsed="3.716711">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t10" name="tester recherche page Baux par Locataire" line="116">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:47.355182" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:47.692067" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:51.195224" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:51.195224" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:47.355182" elapsed="3.840042">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:47.355182" elapsed="3.840042">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${url page Baux}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${recherche boutton localisation}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${recherche boutton localisation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${recherche input localisation}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i}&gt;50">
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${actif}</var>
+<arg>(${Locataire})[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${actif}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${recherche input localisation}</arg>
+<arg>${actif}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Browse lots list" owner="Keywords">
+<var>${le vrai nombre de lots}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected1}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${le vrai nombre de lots}</arg>
+<arg>${nombre de lots expected1}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${fermer bouton recherche}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${nombre de lots expected}+1</value>
+<status status="NOT RUN" start="2024-03-08T17:19:51.195224" elapsed="0.000000"/>
+</for>
+<status status="FAIL" start="2024-03-08T17:19:47.355182" elapsed="3.840042">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<test id="s1-t11" name="tester filtre expiration page Baux" line="146">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-08T17:19:55.226449" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<msg time="2024-03-08T17:19:55.559828" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:58.822331" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-03-08T17:19:58.822331" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-03-08T17:19:55.226449" elapsed="3.595882">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${INPUT_MAIL}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-08T17:19:55.226449" elapsed="3.595882">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<arg>1200</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${url page Baux}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton filtre sans notification}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${bouton filtre sans notification}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>(${element filtre})[1]</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>(${element filtre})[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>(${expiration choix})[${i}]</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>(${expiration choix})[${i}]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton appliquer}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${bouton appliquer}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton filtre avec notification}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${i}==1">
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton résilié cliqué}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${count}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${count1}</var>
+<arg>${element bleu}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${count}</arg>
+<arg>${count1}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${i}==2">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${bouton résilié cliqué}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${count}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Browse lots list" owner="Keywords">
+<var>${count1}</var>
+<arg>${BAUX LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${count1}</var>
+<arg>${element transparant}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${count}</arg>
+<arg>${count1}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="${i}==3">
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton Prochain break cliqué}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${count}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${count1}</var>
+<arg>${element orangé}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${count}</arg>
+<arg>${count1}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE">
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton Date fin cliqué}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${count}</var>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${count1}</var>
+<arg>${element rouge}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${count}</arg>
+<arg>${count1}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</if>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${bouton filtre avec notification}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton selectionné}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${bouton selectionné}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<arg>${bouton appliquer}</arg>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${bouton appliquer}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>5</value>
+<status status="NOT RUN" start="2024-03-08T17:19:58.822331" elapsed="0.000000"/>
+</for>
+<status status="FAIL" start="2024-03-08T17:19:51.195224" elapsed="7.627107">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 104
+Current browser version is 122.0.6261.95 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FBAF23+2207523]
+	Ordinal0 [0x00F530E1+1781985]
+	Ordinal0 [0x00E63FE8+802792]
+	Ordinal0 [0x00E85AD3+940755]
+	Ordinal0 [0x00E811EF+922095]
+	Ordinal0 [0x00E7E9D1+911825]
+	Ordinal0 [0x00EB2200+1122816]
+	Ordinal0 [0x00EB1E5A+1121882]
+	Ordinal0 [0x00EAD406+1102854]
+	Ordinal0 [0x00E875F0+947696]
+	Ordinal0 [0x00E884E6+951526]
+	GetHandleVerifier [0x01262A12+2733954]
+	GetHandleVerifier [0x01254E28+2677656]
+	GetHandleVerifier [0x010446EA+513114]
+	GetHandleVerifier [0x01043796+509190]
+	Ordinal0 [0x00F59CEB+1809643]
+	Ordinal0 [0x00F5E448+1827912]
+	Ordinal0 [0x00F5E535+1828149]
+	Ordinal0 [0x00F67960+1866080]
+	BaseThreadInitThunk [0x76DE7BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD2B+107]
+	RtlClearBits [0x77CBBCAF+191]
+</status>
+</test>
+<status status="FAIL" start="2024-03-08T17:18:49.604525" elapsed="69.217806"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="11" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="11" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-08T17:18:49.808270" level="WARN">Error in file 'D:\projet bazimo\Keywords\Keywords.robot' on line 61: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-08T17:18:49.808270" level="WARN">Error in file 'D:\projet bazimo\Keywords\Keywords.robot' on line 80: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-08T17:18:49.808270" level="WARN">Error in file 'D:\projet bazimo\Keywords\Keywords.robot' on line 87: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-03-08T17:18:50.155081" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:18:53.803501" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:18:57.432848" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:05.176949" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:08.847143" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:24.778729" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:28.478856" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:40.310470" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:43.975751" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:47.692067" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-03-08T17:19:55.559828" level="WARN">The chromedriver version (104.0.5112.20) detected in PATH at D:\projet bazimo\Test\chromedriver.exe might not be compatible with the detected chrome version (122.0.6261.95); currently, chromedriver 122.0.6261.111 is recommended for chrome 122.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
