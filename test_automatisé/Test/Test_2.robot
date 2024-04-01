@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    Collections
 Resource    ../Variables/Variables.robot
 Resource    ../Variables/Variables_2.robot
 Resource    ../Keywords/Keywords.robot
@@ -200,13 +201,13 @@ ADD_VIGNETTE_VIGNETTE
     on check element visibility    ${VALIDATE_BUTTON}
     Click Button    ${CANCEL_BUTTON}
 
-EDIT_VIGNETTE
+CANCEL_EDIT_VIGNETTE
     Login
     on check element visibility    ${BUILDING}
     Click Element    (${BUILDING})[1]
     on check element visibility    ${MENU_PAGE_BUILDING}
     Click Element    (${MENU_PAGE_BUILDING})[3]
-    Sleep    1.5
+    Sleep    0.5
     on check element visibility   (${BUTTON_MODIFY})[2]
     click button    (${BUTTON_MODIFY})[2]
 
@@ -231,4 +232,164 @@ EDIT_VIGNETTE
 
     Should Be Equal    ${Title1}    ${Title2}
     Click Button    ${CANCEL_BUTTON}
+
+CONFIRM_EDIT_VIGNETTE
+    Login
+    on check element visibility    ${BUILDING}
+    Click Element    (${BUILDING})[1]
+    on check element visibility    ${MENU_PAGE_BUILDING}
+    Click Element    (${MENU_PAGE_BUILDING})[3]
+    Sleep    0.5
+    on check element visibility   (${BUTTON_MODIFY})[2]
+    click button    (${BUTTON_MODIFY})[2]
+
+    on check element visibility    ${TITLE_INPUT}
+    
+    Input Text    (${DESCRIPTIVE_INPUT})[1]    Aziz2
+    
+    #Sleep    0.5
+
+
+    on check element visibility    (${BUTTON_MODIFY})[2]
+    Click Button    (${BUTTON_MODIFY})[2]
+
+    on check element visibility    ${NOTIFICATION_MESSAGE}
+    ${SUCCESS_MESSAGE}=    Get Text    ${NOTIFICATION_MESSAGE}
+    Should Be Equal As Strings    ${SUCCESS_MESSAGE}    Le bâtiment / lot diffus a bien été mis à jour.
+
+
+    on check element not visibility    ${TITLE_INPUT}
+    Click Button    (${BUTTON_MODIFY})[2]
+
+    on check element visibility    ${DESCRIPTIVE_INPUT}
+    ${Libellé}=    Get Element Attribute    (${DESCRIPTIVE_INPUT})[1]    value
+
+    Should Be Equal    ${Libellé}    Aziz2
+    Click Button    ${CANCEL_BUTTON}
+
+INFORMATION_VIGNETTE_CLASSIFICATION
+    Login
+    on check element visibility    ${BUILDING}
+    Click Element    (${BUILDING})[1]
+    on check element visibility    ${MENU_PAGE_BUILDING}
+    Click Element    (${MENU_PAGE_BUILDING})[3]
+    Sleep    0.5
+
+    on check element visibility    ${INFORMATION_BUTTON}
+    Click Element    (${INFORMATION_BUTTON})[1]
+
+    on check element visibility    ${TOOLTIP_INFORMATION_BUTTON1}
+    ${a}=    Get Text   ${TOOLTIP_INFORMATION_BUTTON1}
+    
+    Should Be Equal As Strings    ${a}   Bâtiment lié à un lot ou à une classification règlementaire incendie, il n'est pas supprimable. 
+
+INFORMATION_VIGNETTE_PRINCIPALE
+    Login
+    on check element visibility    ${BUILDING}
+    Click Element    (${BUILDING})[1]
+    on check element visibility    ${MENU_PAGE_BUILDING}
+    Click Element    (${MENU_PAGE_BUILDING})[3]
+    Sleep    0.5
+
+    on check element visibility    ${INFORMATION_BUTTON}
+    Click Element    (${INFORMATION_BUTTON})[2]
+
+    on check element visibility    ${TOOLTIP_INFORMATION_BUTTON2}
+    ${a}=    Get Text   ${TOOLTIP_INFORMATION_BUTTON2}
+    
+    Should Be Equal As Strings    ${a}   Bâtiment principal de l'actif, il n'est pas supprimable. 
+
+SUPPRESSION_VIGNETTE
+    Login
+    on check element visibility    ${BUILDING}
+    Click Element    (${BUILDING})[1]
+    on check element visibility    ${MENU_PAGE_BUILDING}
+    Click Element    (${MENU_PAGE_BUILDING})[3]
+    on check element visibility    ${VIGNETTE_BROWSE}
+    Click Button    ${VIGNETTE_BROWSE}
+    
+    on check element visibility    ${BUTTON_MODIFY}
+    Click Button    (${BUTTON_MODIFY})[6]
+    on check element visibility    ${DELETE_VIGNETTE_MESSAGE}
+    ${message}=    Get Text    ${DELETE_VIGNETTE_MESSAGE}
+    ${no}=    Get Text    ${DELETE_VIGNETTE_NO}
+    ${yes}=    Get Text    ${DELETE_VIGNETTE_YES}
+
+    Should Be Equal As Strings    ${message}    Êtes-vous sûr(e) de vouloir supprimer ce bâtiment / lot diffus ?
+    Should Be Equal As Strings    ${no}    Non
+    Should Be Equal As Strings    ${yes}    Oui
+    on check element visibility    ${DELETE_VIGNETTE_NO}
+    Click Button    ${DELETE_VIGNETTE_NO}
+
+
+    on check element visibility    ${BUTTON_MODIFY}
+    Click Button    (${BUTTON_MODIFY})[5]
+    
+    
+
+    on check element visibility    ${INPUT_SURFACE}
+
+    ${a}=    Get Value    (${INPUT_SURFACE})[1]    
+
+
+    Should Be Equal As Strings    ${a}    aziz
+
+
+ADD_VIGNETTE_SUCCESMESSAGE
+    Login
+    on check element visibility    ${BUILDING}
+    Click Element    (${BUILDING})[1]
+    on check element visibility    ${MENU_PAGE_BUILDING}
+    Click Element    (${MENU_PAGE_BUILDING})[3]
+
+    Sleep    0.5
+    on check element visibility    ${PICTO_+}
+
+    Sleep    1
+    Click Button    (${PICTO_+})[1]
+    on check element visibility    ${TITLE_INPUT}
+    Click Element    ${TITLE_INPUT}
+    on check element visibility    ${TITLE_ELEMENTS}
+    Click Element    (${TITLE_ELEMENTS})[1]
+
+    on check element visibility    ${INPUT_SURFACE}
+    Input Text    ${INPUT_SURFACE}    aziz4
+    Sleep    0.5
+
+    on check element visibility    ${BUTTON_MODIFY}
+    Click Button    (${BUTTON_MODIFY})[5]
+    
+
+    on check element visibility    ${NOTIFICATION_MESSAGE}
+    ${a}=    Get Text    ${NOTIFICATION_MESSAGE}
+    Should Be Equal As Strings    ${a}    Le bâtiment / lot diffus a bien été créé.
+
+SUPPRESSION_VIGNETTE_SUCCESMESSAGE
+    Login
+    on check element visibility    ${BUILDING}
+    Click Element    (${BUILDING})[1]
+    on check element visibility    ${MENU_PAGE_BUILDING}
+    Click Element    (${MENU_PAGE_BUILDING})[3]
+    on check element visibility    ${VIGNETTE_BROWSE}
+    Click Button    ${VIGNETTE_BROWSE}
+    
+    on check element visibility    ${BUTTON_MODIFY}
+    Click Button    (${BUTTON_MODIFY})[6]
+    
+    on check element visibility    ${DELETE_VIGNETTE_YES}
+    Click Button    ${DELETE_VIGNETTE_YES}
+
+    on check element visibility    ${NOTIFICATION_MESSAGE}
+    ${a}=    Get Text    ${NOTIFICATION_MESSAGE}
+    Should Be Equal    ${a}    le bâtiment / lot diffus a bien été supprimé.
+
+    on check element visibility    ${BUTTON_MODIFY}
+    Click Button    (${BUTTON_MODIFY})[4]
+    on check element visibility    ${INPUT_SURFACE}
+
+    ${a}=    Get Value    (${INPUT_SURFACE})[1]    
+
+
+    Should Not Be Equal As Strings    ${a}    aziz4
+
 

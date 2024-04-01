@@ -25,3 +25,12 @@ ${VIGNETTE_ADD}    //button[@class="flex h-14 w-14 items-center justify-center r
 ${CANCEL_BUTTON}    //button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-md bg-neutral-50 text-neutral-0 hover:bg-neutral-45 hover:shadow-none active:bg-neutral-50 active:shadow-lg"]
 ${VALIDATE_BUTTON}    (//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-md bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"])[4]
 
+${NOTIFICATION_MESSAGE}    //div[@class="Vue-Toastification__toast-body"]
+
+${INFORMATION_BUTTON}    //div[@class="inline-block theme"]
+${TOOLTIP_INFORMATION_BUTTON1}    //div[@style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(67px, 58px);"]
+${TOOLTIP_INFORMATION_BUTTON2}    //div[@style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(438px, 58px);"]
+
+${DELETE_VIGNETTE_NO}    //button[@class="h-full w-full flex items-center justify-center disabled:bg-transparent disabled:border disabled:border-neutral-50 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] border border-primary-100 text-primary-100 hover:bg-primary-50 hover:border-transparent hover:shadow-none hover:text-neutral-0 active:bg-primary-90 active:border active:border-primary-100 active:shadow-lg active:text-neutral-0"]
+${DELETE_VIGNETTE_YES}    //button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]
+${DELETE_VIGNETTE_MESSAGE}    //div[@class="mb-3 flex flex-col text-center"]
