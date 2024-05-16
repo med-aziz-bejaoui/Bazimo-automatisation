@@ -1,0 +1,255 @@
+--ajouter une vignette - champs
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je clic sur ajouter descriptif ou sur le petit + au niveau de la pagination
+
+alors je dois pouvoir renseigner des valeurs pour les champs suivants:
+
+Libellé : champ texte
+Elévation : champ composé
+Places parking : champ composé
+Commentaire : champ texte
+
+
+--ajouter une vignette - titre
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je clic sur ajouter descriptif ou sur le petit + au niveau de la pagination
+
+alors je dois pouvoir sélectionner un titre à la vignette depuis un sélecteur de type dont le contenu de la liste est le suivant :
+
+Bâtiment
+Lot diffus
+
+
+--bloc descriptif  - ajouter une vignette via la vignette
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je clic sur ajouter descriptif
+
+alors je dois pouvoir visualiser une vignette en mode édition contenant
+
+un titre
+des champs liés
+deux petits boutons v et x pour valider et annuler
+
+
+--bloc descriptif  - ajouter une vignette via le picto de la pagination
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je clic sur le petit + au niveau de la pagination
+
+alors je dois pouvoir visualiser une vignette en mode édition contenant
+
+un titre
+des champs liés
+deux petits boutons v et x pour valider et annuler
+
+
+--bloc descriptif  - annuler la modification d’une vignette 
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif
+
+lorsque je vais sur la page en question en version desktop, que je clic sur le crayon d’édition et que je clic sur le bouton x
+
+alors la modification ne doit pas s’effectuer et le mode édition se ferme
+
+
+--bloc descriptif  - confirmer la modification d’une vignette
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif
+
+lorsque je vais sur la page en question en version desktop, que je clic sur le crayon d’édition que je modifie une valeur d’un champ et que je clic sur le bouton v
+
+alors la modification doit s’effectuer et je dois visualiser un message de succès : Le bâtiment / lot diffus a bien été mis à jour
+
+
+
+--bloc descriptif  - édition
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop
+
+alors je dois pouvoir éditer le bloc descriptif
+
+
+--bloc descriptif  - import état locatif
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et la trame d’import état locatif
+
+lorsque je vais sur la page d’import, que j’importe correctement un fichier d’état locatif, que je vais par la suite sur la page fiche technique en version desktop
+
+alors je dois pouvoir visualiser les bâtiments ajoutés depuis le fichier
+
+
+--bloc descriptif  - modifier une vignette 
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif
+
+lorsque je vais sur la page en question en version desktop et que je clic sur le crayon d’édition
+
+alors je dois pouvoir modifier la vignette
+
+--bloc descriptif  - supprimer la vignette d’un bâtiment lié à un lot
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif qui soit liée à un lot
+
+lorsque je vais sur la page en question en version desktop et que je localise la vignette en question
+
+alors je dois pouvoir visualiser un bouton d’information à la place du bouton poubelle et qui comporte le tooltip suivant : Bâtiment lié à un lot ou à une classification règlementaire incendie, il n’est pas supprimable
+
+--bloc descriptif  - supprimer la vignette d’un bâtiment lié à une classification règlementaire incendie
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif qui soit liée à une classification règlementaire incendie
+
+lorsque je vais sur la page en question en version desktop et que je localise la vignette en question
+
+alors je dois pouvoir visualiser un bouton d’information à la place du bouton poubelle et qui comporte le tooltip suivant : Bâtiment lié à un lot ou à une classification règlementaire incendie, il n’est pas supprimable
+
+
+--bloc descriptif  - supprimer la vignette d’un bâtiment par défaut
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je localise la vignette du bâtiment par défaut
+
+alors je dois pouvoir visualiser un bouton d’information à la place du bouton poubelle et qui comporte le tooltip suivant : Bâtiment principal, il n’est pas supprimable
+
+--bloc descriptif  - supprimer une vignette 
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif qui ne soit ni du bâtiment par défaut de l’actif ni d’un batiment lié à un lot ni d’un batiment lié à une classification réglementaire incendie
+
+lorsque je vais sur la page en question en version desktop et que je clic sur le bouton poubelle d’une vignette
+
+alors une confirm modale doit apparaitre avec le message suivant : Etes vous sûr de vouloir supprimer cet bâtiment / lot diffus ?
+La confirm modale doit comporter des boutons d’annulation et de validation
+
+--bloc descriptif  - valider l’ajout d’une vignette
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que j’ajoute une vignette
+
+alors je dois pouvoir visualiser un message de succès : le bâtiment / lot diffus a bien été créé
+
+--bloc descriptif - descriptif avec deux vignettes
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins deux vignettes dans le bloc descriptif
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc descriptif les deux vignettes préalablement créées sans le bloc d’ajout.
+
+il doit y avoir un point de pagination et un petit picto + pour ajouter une nouvelle vignette
+
+--bloc descriptif - descriptif avec trois vignettes
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins 3 vignettes dans le bloc descriptif
+
+lorsque je vais sur la page en question
+
+alors je ne dois voir dans le bloc descriptif que les deux premières vignettes préalablement créées. la 3eme est cachée.
+
+il doit y avoir 2 points de pagination : le 1er en vert foncé, le second en plus clair et un petit picto + pour ajouter une nouvelle vignette
+
+
+--bloc descriptif - éléments
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question
+
+alors je dois voir un bloc Descriptif contenant les éléments suivants:
+
+un récapitulatif
+un descriptif
+
+--bloc descriptif - le récapitulatif
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant les champs suivants:
+
+Bâtiments
+Lot diffus
+Place de parking
+Place de parking couvert
+Place de parking extérieur
+Place de parking non précisé
+
+--bloc descriptif- descriptif par défaut
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question
+
+alors je dois voir un bloc descriptif contenant par défaut ces deux éléments:
+
+une vignette avec comme titre Bâtiment principal et comme Libellé Principal
+un bloc d’ajout avec un gros picto + et le texte suivant : Ajouter descriptif.
+il ne doit y avoir qu’un point de pagination qui est vert foncé
+
+--Elévation - champs
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je clic sur ajouter descriptif ou sur le petit + au niveau de la pagination
+
+alors au niveau du champ Elévation je dois pouvoir renseigner des valeurs pour les deux champs textes suivants:
+
+Nombre d’étages
+Nombre de sous-sol
+
+--Places parking - champs
+étant donné que je me connecte avec un user ayant accès à la page fiche technique
+
+lorsque je vais sur la page en question en version desktop et que je clic sur ajouter descriptif ou sur le petit + au niveau de la pagination
+
+alors au niveau du champ Places parking je dois pouvoir visualiser des valeurs pour les trois champs textes suivants:
+
+Parking couvert
+Parking extérieur
+Parking non précisé
+
+--récapitulatif - Bâtiments
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai déjà des vignettes de descriptifs de créés avec le type bâtiment
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant dans le champs Bâtiment la somme des vignettes descriptif de type Bâtiment
+
+--récapitulatif - Lot diffus
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai déjà des vignettes de descriptifs de créés avec le type lot diffus
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant dans le champs Lots diffus la somme des vignettes descriptif de type Lot diffus
+
+--récapitulatif - Place de parking
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai déjà des lots sur la page Gestion/Lots de type parking (tous types confondus)
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant dans le champs places parking la somme des places de parking tous types confondus se trouvant sur la page Gestion/Lots
+
+--récapitulatif - place de parking couvert
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai déjà des lots sur la page Gestion/Lots de type parking couvert
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant dans le champs places parking couvert la somme des places de parking couverts se trouvant sur la page Gestion/Lots
+
+--récapitulatif - place de parking extérieur
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai déjà des lots sur la page Gestion/Lots de type parking extérieur
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant dans le champs places parking extérieur la somme des places de parking extérieur se trouvant sur la page Gestion/Lots
+
+--récapitulatif - place de parking non précisé
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai déjà des lots sur la page Gestion/Lots de type parking non précisé
+
+lorsque je vais sur la page en question
+
+alors je dois voir dans le bloc Descriptif, un récapitulatif contenant dans le champs places parking non précisé la somme des places de parking non précisé se trouvant sur la page Gestion/Lots
+
+--supprimer une vignette - annuler la suppression
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette supprimable dans le bloc descriptif
+
+lorsque je vais sur la page en question en version desktop, que je clic sur le bouton poubelle d’une vignette supprimable et que je clic sur annuler dans la confirm modale
+
+alors celle ci doit se fermer et la vignette reste visible
+
+--supprimer une vignette - confirmer la suppression
+étant donné que je me connecte avec un user ayant accès à la page fiche technique et que j’ai au moins une vignette dans le bloc descriptif
+
+lorsque je vais sur la page en question en version desktop, que je clic sur le bouton poubelle d’une vignette supprimable et que je clic sur confirmer dans la confirm modale
+
+alors celle ci doit se fermer, la vignette disparait et un message de succès apparait : le bâtiment / lot diffus a bien été supprimé

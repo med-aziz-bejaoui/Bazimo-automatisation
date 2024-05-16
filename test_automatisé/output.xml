@@ -1,0 +1,2305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.1 on win32)" generated="2024-05-16T12:56:54.644711" rpa="false" schemaversion="5">
+<suite id="s1" name="Test 1" source="D:\projet bazimo\test_automatisé\Test\Test_1.robot">
+<test id="s1-t1" name="login test" line="6">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:56:54.866933" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:56:54.865841" elapsed="2.350558"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.217407" elapsed="0.028073"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.245984" elapsed="0.241416"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:56:57.522792" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.487400" elapsed="0.035392"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:56:57.245480" elapsed="0.277312"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:56:57.522792" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.522792" elapsed="0.126090"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:56:57.648882" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.648882" elapsed="0.079050"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:56:57.727932" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.727932" elapsed="0.054892"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:56:54.864768" elapsed="2.918056"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:56:54.850369" elapsed="2.932455"/>
+</test>
+<test id="s1-t2" name="Test Gestion" line="9">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:56:57.782824" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:56:57.782824" elapsed="2.116553"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:56:59.899377" elapsed="1.089098"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:00.990486" elapsed="0.271458"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:01.302603" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.262943" elapsed="0.039660"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:57:00.989487" elapsed="0.313116"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:01.303603" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.303603" elapsed="0.144334"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:01.447937" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.447937" elapsed="0.156960"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:01.604897" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.604897" elapsed="0.133737"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:56:57.782824" elapsed="3.955810"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.740719" elapsed="0.030378"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:01.792696" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.771097" elapsed="0.021599"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:01.739707" elapsed="0.052989"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:01.793704" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:01.793704" elapsed="0.284412"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:01.739707" elapsed="0.338409"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:56:57.782824" elapsed="4.295292"/>
+</test>
+<test id="s1-t3" name="Lots page" line="13">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:02.078116" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:57:02.078116" elapsed="2.728319"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:57:04.806435" elapsed="0.042456"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:04.852104" elapsed="0.271411"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.170918" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.124518" elapsed="0.046400"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:57:04.849901" elapsed="0.322027"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.173946" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.172927" elapsed="0.129933"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.302860" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.302860" elapsed="0.091985"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.395844" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.394845" elapsed="0.084223"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:02.078116" elapsed="3.400952"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.479068" elapsed="0.030647"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.532725" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.509715" elapsed="0.023010"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:05.479068" elapsed="0.053657"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.533727" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.533727" elapsed="0.292554"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:05.479068" elapsed="0.347213"/>
+</kw>
+<kw name="Lots" owner="Keywords">
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.830428" elapsed="0.076535"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.935235" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.907860" elapsed="0.028010"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:05.830428" elapsed="0.105442"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:05.936418" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:05.935870" elapsed="0.280130"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:05.830428" elapsed="0.385572"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:24.090305" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:24.090305" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-16T12:57:06.218302" elapsed="17.872003">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:24.090305" elapsed="0.000000"/>
+</kw>
+<arg>${LOTS}</arg>
+<status status="FAIL" start="2024-05-16T12:57:06.216000" elapsed="17.874305">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:${LOTS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:24.090305" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:05.830428" elapsed="18.259877">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${Lots breadcrump location}</arg>
+<arg>${Lots breadcrump valeur}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:24.090305" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${gestion breadcrump location}</arg>
+<arg>${gestion breadcrump valeur}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:24.090305" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:02.078116" elapsed="22.012189">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</test>
+<test id="s1-t4" name="Baux page" line="21">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:24.101815" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:57:24.101815" elapsed="2.421948"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:57:26.525440" elapsed="0.027124"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:26.553940" elapsed="0.246920"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:26.872230" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:26.800860" elapsed="0.071370"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:57:26.553339" elapsed="0.319903"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:26.873242" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:26.873242" elapsed="0.138331"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:27.011573" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.011573" elapsed="0.110534"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:27.122107" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.122107" elapsed="0.103439"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:24.101815" elapsed="3.123731"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.232368" elapsed="0.019176"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:27.280952" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.251544" elapsed="0.029408"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:27.232368" elapsed="0.048584"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:27.280952" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.280952" elapsed="0.286511"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:27.232368" elapsed="0.335095"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.567463" elapsed="0.016541"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:27.616067" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.589083" elapsed="0.026984"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:27.567463" elapsed="0.048604"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:27.616067" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:27.616067" elapsed="0.296365"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:27.567463" elapsed="0.344969"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:31.588729" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:31.591460" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-16T12:57:27.912432" elapsed="3.679736">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:31.592168" elapsed="0.000000"/>
+</kw>
+<arg>${Baux}</arg>
+<status status="FAIL" start="2024-05-16T12:57:27.912432" elapsed="3.679736">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:${Baux}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:31.592168" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:27.567463" elapsed="4.024705">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:24.101815" elapsed="7.490353">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</test>
+<test id="s1-t5" name="session de quittancement page" line="25">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:31.596109" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:57:31.596109" elapsed="2.299018"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:57:33.895127" elapsed="0.033179"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:33.929432" elapsed="0.237015"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.191882" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.174710" elapsed="0.017172"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:57:33.929432" elapsed="0.262450"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.191882" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.191882" elapsed="0.097550"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.289432" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.289432" elapsed="0.134455"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.423887" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.423887" elapsed="0.047670"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:31.596109" elapsed="2.875448"/>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.471557" elapsed="0.020090"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.507609" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.491647" elapsed="0.015962"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:34.471557" elapsed="0.036052"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.507609" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.507609" elapsed="0.292858"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:34.471557" elapsed="0.328910"/>
+</kw>
+<kw name="Session de quittancement" owner="Keywords">
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.800467" elapsed="0.047065"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.865246" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.847532" elapsed="0.017714"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:34.800467" elapsed="0.064779"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:34.865246" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:34.865246" elapsed="0.299712"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:34.800467" elapsed="0.364491"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:35.165969" level="INFO">Clicking element 'xpath:(//a[@class="p-2 hover:text-primary-100"])[2]'.</msg>
+<msg time="2024-05-16T12:57:35.318865" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-16T12:57:35.318865" level="FAIL">Element with locator 'xpath:(//a[@class="p-2 hover:text-primary-100"])[2]' not found.</msg>
+<arg>xpath:${Lots}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-16T12:57:35.164958" elapsed="0.154593">Element with locator 'xpath:(//a[@class="p-2 hover:text-primary-100"])[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:34.800467" elapsed="0.520187">Element with locator 'xpath:(//a[@class="p-2 hover:text-primary-100"])[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:31.596109" elapsed="3.724545">Element with locator 'xpath:(//a[@class="p-2 hover:text-primary-100"])[2]' not found.</status>
+</test>
+<test id="s1-t6" name="tester le nombre de Lots" line="33">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:35.325257" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:57:35.324664" elapsed="2.918618"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.244589" elapsed="0.028496"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.273085" elapsed="0.278251"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:38.595467" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.552573" elapsed="0.042894"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:57:38.273085" elapsed="0.322382"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:38.596491" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.596491" elapsed="0.132521"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:38.729012" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.729012" elapsed="0.089205"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:38.818217" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.818217" elapsed="0.083391"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:35.322423" elapsed="3.579185"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2024-05-16T12:57:38.907935" elapsed="0.667390"/>
+</kw>
+<kw name="Lots" owner="Keywords">
+<kw name="Gestion" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:39.575325" elapsed="0.016558"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:39.608681" level="INFO">Element '(//div[@class="flex items-center"])[1]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:39.591883" elapsed="0.016798"/>
+</kw>
+<arg>${GESTION}</arg>
+<status status="PASS" start="2024-05-16T12:57:39.575325" elapsed="0.033356"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:39.608681" level="INFO">Simulating Mouse Over on element '(//div[@class="flex items-center"])[1]'.</msg>
+<arg>${GESTION}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:39.608681" elapsed="0.365735"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:39.575325" elapsed="0.399091"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:39.974416" elapsed="0.139309"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:40.125078" level="INFO">Element '(//a[@class="p-2 hover:text-primary-100"])[2]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:40.113725" elapsed="0.011353"/>
+</kw>
+<arg>${LOTS}</arg>
+<status status="PASS" start="2024-05-16T12:57:39.974416" elapsed="0.150662"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:40.125078" level="INFO">Clicking element 'xpath:(//a[@class="p-2 hover:text-primary-100"])[2]'.</msg>
+<arg>xpath:${LOTS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:40.125078" elapsed="0.081224"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:39.575325" elapsed="0.630977"/>
+</kw>
+<kw name="Browse lots list" owner="Keywords">
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:40.208570" elapsed="1.133297"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:41.358462" level="INFO">Element '//span[@class="italic text-neutral-50"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.341867" elapsed="0.016595"/>
+</kw>
+<arg>${localisation du chaine qui contient le nombre de lignes}</arg>
+<status status="PASS" start="2024-05-16T12:57:40.208570" elapsed="1.149892"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:41.392901" level="INFO">${PAGE_LINES} = 288 élément(s)</msg>
+<var>${PAGE_LINES}</var>
+<arg>${localisation du chaine qui contient le nombre de lignes}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.358462" elapsed="0.034439"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-05-16T12:57:41.392901" level="INFO">${NUMBER} = ['288']</msg>
+<var>${NUMBER}</var>
+<arg>${PAGE_LINES}</arg>
+<arg>\\d+</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-05-16T12:57:41.392901" level="INFO">${NUMBER} = 288</msg>
+<var>${NUMBER}</var>
+<arg>${NUMBER[0]}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-16T12:57:41.392901" level="INFO">288</msg>
+<arg>${NUMBER}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-05-16T12:57:41.392901" level="INFO">${NUMBER_THRESHOLD} = 50</msg>
+<var>${NUMBER_THRESHOLD}</var>
+<arg>50</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${NUMBER} &gt; ${NUMBER_THRESHOLD}">
+<for flavor="IN RANGE">
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.031864"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:41.441562" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[5]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.424765" elapsed="0.016797"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.048661"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.441562" elapsed="0.286993"/>
+</kw>
+<var name="${ITER}">5</var>
+<status status="PASS" start="2024-05-16T12:57:41.392901" elapsed="0.335654"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.729554" elapsed="0.023117"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:41.770675" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[10]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.752671" elapsed="0.018004"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:41.729554" elapsed="0.041121"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:41.770675" elapsed="0.321717"/>
+</kw>
+<var name="${ITER}">10</var>
+<status status="PASS" start="2024-05-16T12:57:41.728555" elapsed="0.363837"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.092392" elapsed="0.039225"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:42.141720" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[15]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.131617" elapsed="0.010103"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:42.092392" elapsed="0.049328"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.141720" elapsed="0.300033"/>
+</kw>
+<var name="${ITER}">15</var>
+<status status="PASS" start="2024-05-16T12:57:42.092392" elapsed="0.349361"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.441753" elapsed="0.018136"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:42.484495" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[20]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.459889" elapsed="0.024606"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:42.441753" elapsed="0.042742"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.484495" elapsed="0.276250"/>
+</kw>
+<var name="${ITER}">20</var>
+<status status="PASS" start="2024-05-16T12:57:42.441753" elapsed="0.318992"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.760745" elapsed="0.031665"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:42.809384" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[25]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.792410" elapsed="0.016974"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:42.760745" elapsed="0.048639"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:42.809384" elapsed="0.292096"/>
+</kw>
+<var name="${ITER}">25</var>
+<status status="PASS" start="2024-05-16T12:57:42.760745" elapsed="0.340735"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.101480" elapsed="0.026040"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:43.162359" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[30]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.127520" elapsed="0.034839"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:43.101480" elapsed="0.060879"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.163366" elapsed="0.283184"/>
+</kw>
+<var name="${ITER}">30</var>
+<status status="PASS" start="2024-05-16T12:57:43.101480" elapsed="0.345070"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.446550" elapsed="0.029873"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:43.508298" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[35]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.476423" elapsed="0.031875"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:43.446550" elapsed="0.061748"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.508298" elapsed="0.289854"/>
+</kw>
+<var name="${ITER}">35</var>
+<status status="PASS" start="2024-05-16T12:57:43.446550" elapsed="0.351602"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.798962" elapsed="0.023584"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:43.829066" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[40]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.822546" elapsed="0.006520"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:43.798962" elapsed="0.030104"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:43.829066" elapsed="0.288439"/>
+</kw>
+<var name="${ITER}">40</var>
+<status status="PASS" start="2024-05-16T12:57:43.798962" elapsed="0.318543"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.117505" elapsed="0.038222"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:44.176278" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[45]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.156621" elapsed="0.019657"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:44.117505" elapsed="0.058773"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.176278" elapsed="0.284054"/>
+</kw>
+<var name="${ITER}">45</var>
+<status status="PASS" start="2024-05-16T12:57:44.117505" elapsed="0.342827"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.460332" elapsed="0.038075"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:44.519128" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[50]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.498407" elapsed="0.020721"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:44.460332" elapsed="0.058796"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.519128" elapsed="0.290583"/>
+</kw>
+<var name="${ITER}">50</var>
+<status status="PASS" start="2024-05-16T12:57:44.460332" elapsed="0.349379"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:44.811922" elapsed="0.648529"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:45.477729" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[55]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:45.460451" elapsed="0.017278"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:44.811922" elapsed="0.667264"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:45.479186" elapsed="0.295357"/>
+</kw>
+<var name="${ITER}">55</var>
+<status status="PASS" start="2024-05-16T12:57:44.811922" elapsed="0.962621"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:45.774543" elapsed="0.018745"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:45.808994" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[60]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:45.793288" elapsed="0.024201"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:45.774543" elapsed="0.042946"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:45.817489" elapsed="0.294850"/>
+</kw>
+<var name="${ITER}">60</var>
+<status status="PASS" start="2024-05-16T12:57:45.774543" elapsed="0.337796"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.112339" elapsed="0.037995"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:46.169032" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[65]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.150334" elapsed="0.018698"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:46.112339" elapsed="0.056693"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.169032" elapsed="0.290524"/>
+</kw>
+<var name="${ITER}">65</var>
+<status status="PASS" start="2024-05-16T12:57:46.112339" elapsed="0.347217"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.461539" elapsed="0.049168"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:46.538314" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[70]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.510707" elapsed="0.027607"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:46.460541" elapsed="0.077773"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.538314" elapsed="0.287350"/>
+</kw>
+<var name="${ITER}">70</var>
+<status status="PASS" start="2024-05-16T12:57:46.460541" elapsed="0.365123"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.825664" elapsed="0.037578"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:46.898814" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[75]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.863949" elapsed="0.035993"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:46.825664" elapsed="0.074278"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:46.899942" elapsed="0.293770"/>
+</kw>
+<var name="${ITER}">75</var>
+<status status="PASS" start="2024-05-16T12:57:46.825664" elapsed="0.368048"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.193712" elapsed="0.024724"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:47.235627" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[80]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.219492" elapsed="0.017452"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:47.193712" elapsed="0.043232"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.236944" elapsed="0.289787"/>
+</kw>
+<var name="${ITER}">80</var>
+<status status="PASS" start="2024-05-16T12:57:47.193712" elapsed="0.333019"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.526731" elapsed="0.015473"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:47.570186" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[85]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.542204" elapsed="0.029442"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:47.526731" elapsed="0.044915"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.571646" elapsed="0.287540"/>
+</kw>
+<var name="${ITER}">85</var>
+<status status="PASS" start="2024-05-16T12:57:47.526731" elapsed="0.332455"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.859186" elapsed="0.023621"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:47.893781" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[90]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.882807" elapsed="0.010974"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:47.859186" elapsed="0.042694"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:47.901880" elapsed="0.290874"/>
+</kw>
+<var name="${ITER}">90</var>
+<status status="PASS" start="2024-05-16T12:57:47.859186" elapsed="0.333568"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.192754" elapsed="0.025060"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:48.236264" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[95]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.217814" elapsed="0.018450"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:48.192754" elapsed="0.043510"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.236264" elapsed="0.305634"/>
+</kw>
+<var name="${ITER}">95</var>
+<status status="PASS" start="2024-05-16T12:57:48.192754" elapsed="0.350151"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.543907" elapsed="0.015063"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:48.589938" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[100]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.558970" elapsed="0.031802"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:48.542905" elapsed="0.047943"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.590848" elapsed="0.285412"/>
+</kw>
+<var name="${ITER}">100</var>
+<status status="PASS" start="2024-05-16T12:57:48.542905" elapsed="0.333355"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:48.876260" elapsed="0.733106"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:49.664609" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[105]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:49.609366" elapsed="0.055243"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:48.876260" elapsed="0.788349"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:49.664609" elapsed="0.294613"/>
+</kw>
+<var name="${ITER}">105</var>
+<status status="PASS" start="2024-05-16T12:57:48.876260" elapsed="1.082962"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:49.959222" elapsed="0.029513"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:50.010628" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[110]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:49.988735" elapsed="0.021893"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:49.959222" elapsed="0.051406"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.010628" elapsed="0.284052"/>
+</kw>
+<var name="${ITER}">110</var>
+<status status="PASS" start="2024-05-16T12:57:49.959222" elapsed="0.335458"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.294680" elapsed="0.037925"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:50.352557" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[115]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.333616" elapsed="0.019936"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:50.294680" elapsed="0.058872"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.353552" elapsed="0.272908"/>
+</kw>
+<var name="${ITER}">115</var>
+<status status="PASS" start="2024-05-16T12:57:50.294680" elapsed="0.331780"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.626460" elapsed="0.028976"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:50.674798" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[120]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.655436" elapsed="0.019362"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:50.626460" elapsed="0.048338"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.674798" elapsed="0.301654"/>
+</kw>
+<var name="${ITER}">120</var>
+<status status="PASS" start="2024-05-16T12:57:50.626460" elapsed="0.349992"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:50.976452" elapsed="0.023595"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:51.015566" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[125]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.000047" elapsed="0.015519"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:50.976452" elapsed="0.041290"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.017742" elapsed="0.294713"/>
+</kw>
+<var name="${ITER}">125</var>
+<status status="PASS" start="2024-05-16T12:57:50.976452" elapsed="0.336003"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.312455" elapsed="0.028300"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:51.358703" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[130]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.340755" elapsed="0.017948"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:51.312455" elapsed="0.046248"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.358703" elapsed="0.284439"/>
+</kw>
+<var name="${ITER}">130</var>
+<status status="PASS" start="2024-05-16T12:57:51.312455" elapsed="0.330687"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.645229" elapsed="0.013336"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:51.688524" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[135]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.670726" elapsed="0.017798"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:51.644224" elapsed="0.044300"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.689526" elapsed="0.288563"/>
+</kw>
+<var name="${ITER}">135</var>
+<status status="PASS" start="2024-05-16T12:57:51.644224" elapsed="0.333865"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:51.980088" elapsed="0.028110"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:52.025447" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[140]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.009705" elapsed="0.015742"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:51.979091" elapsed="0.046356"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.025447" elapsed="0.299806"/>
+</kw>
+<var name="${ITER}">140</var>
+<status status="PASS" start="2024-05-16T12:57:51.979091" elapsed="0.346162"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.326794" elapsed="0.024025"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:52.358921" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[145]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.350819" elapsed="0.008102"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:52.326255" elapsed="0.032666"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.358921" elapsed="0.300693"/>
+</kw>
+<var name="${ITER}">145</var>
+<status status="PASS" start="2024-05-16T12:57:52.325253" elapsed="0.334361"/>
+</iter>
+<iter>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.660614" elapsed="0.061854"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:52.741963" level="INFO">Element '(//div[@class="group flex shrink undefined border-b border-primary-10 hover:bg-primary-10 cursor-default undefined hover:z-50 px-4"])[150]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:52.722468" elapsed="0.019495"/>
+</kw>
+<arg>(${lines})[${ITER}]</arg>
+<status status="PASS" start="2024-05-16T12:57:52.659614" elapsed="0.082349"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:53.036537" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB61F0B0]
+	(No symbol) [0x00007FF7DB63A501]
+	(No symbol) [0x00007FF7DB6CB3C9]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:53.039089" level="FAIL">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<arg>(${lines})[${ITER}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-05-16T12:57:52.741963" elapsed="0.332964">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<var name="${ITER}">150</var>
+<status status="FAIL" start="2024-05-16T12:57:52.659614" elapsed="0.416935">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</iter>
+<var>${ITER}</var>
+<value>5</value>
+<value>${NUMBER}+1</value>
+<value>5</value>
+<status status="FAIL" start="2024-05-16T12:57:41.392901" elapsed="11.683648">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</for>
+<status status="FAIL" start="2024-05-16T12:57:41.392901" elapsed="11.683648">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</branch>
+<status status="FAIL" start="2024-05-16T12:57:41.392901" elapsed="11.684257">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:53.077158" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${count}</var>
+<arg>${lines}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:53.077158" elapsed="0.000524"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:53.077682" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${count}</value>
+<status status="NOT RUN" start="2024-05-16T12:57:53.077682" elapsed="0.000000"/>
+</return>
+<var>${le vrai nombre de lots}</var>
+<arg>${LOTS LINES}</arg>
+<arg>${nombre de lots breadcrump location}</arg>
+<status status="FAIL" start="2024-05-16T12:57:40.207302" elapsed="12.870380">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="nombre de Lots expected" owner="Keywords">
+<var>${nombre de lots expected}</var>
+<status status="NOT RUN" start="2024-05-16T12:57:53.078831" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${le vrai nombre de lots}</arg>
+<arg>${nombre de lots expected}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:53.079363" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:35.322423" elapsed="17.756940">WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB64587F]
+	(No symbol) [0x00007FF7DB6CC025]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</test>
+<test id="s1-t7" name="tester la fonctionalité des filtre rapide du page baux" line="41">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:53.083846" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T12:57:53.083846" elapsed="2.532958"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-16T12:57:55.616804" elapsed="0.030727"/>
+</kw>
+<kw name="on check element visibility" owner="Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:55.647531" elapsed="0.284109"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:55.976201" level="INFO">Element '//input[@placeholder="Email"]' is displayed.</msg>
+<arg>${location}</arg>
+<arg>1200</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T12:57:55.932643" elapsed="0.043558"/>
+</kw>
+<arg>${INPUT_MAIL}</arg>
+<status status="PASS" start="2024-05-16T12:57:55.647531" elapsed="0.328670"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:55.977655" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Email"]'.</msg>
+<arg>${INPUT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:55.977655" elapsed="0.168080"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:56.145735" level="INFO">Typing text 'admin@bazimo.fr' into text field '//input[@placeholder="Mot de passe"]'.</msg>
+<arg>${INPUT_MOT_DE_PASSE}</arg>
+<arg>${MOT_DE_PASSE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:56.145735" elapsed="0.139959"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:56.292056" level="INFO">Clicking button '//button[@class="h-full w-full flex items-center justify-center disabled:bg-neutral-45 disabled:cursor-not-allowed disabled:text-neutral-50 rounded-full px-[16px] bg-primary-100 text-neutral-0 hover:bg-primary-90 hover:shadow-none active:bg-primary-100 active:shadow-lg"]'.</msg>
+<arg>${BOUTON_CONNEXION}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T12:57:56.285694" elapsed="0.057231"/>
+</kw>
+<status status="PASS" start="2024-05-16T12:57:53.083262" elapsed="3.259663"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:57.374600" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:57.374600" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<arg>${home location}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="FAIL" start="2024-05-16T12:57:56.342925" elapsed="1.031675">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</kw>
+<kw name="Gestion" owner="Keywords">
+<status status="NOT RUN" start="2024-05-16T12:57:57.374600" elapsed="0.000000"/>
+</kw>
+<kw name="Baux" owner="Keywords">
+<status status="NOT RUN" start="2024-05-16T12:57:57.374600" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${filtre rapide date de fin location}</arg>
+<arg>${filtre rapide date de fin valeur}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:57.374600" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${filtre rapide Prochain break location}</arg>
+<arg>${filtre rapide Prochain break valeur}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:57.374600" elapsed="0.000000"/>
+</kw>
+<kw name="Test Breadcrumb" owner="Keywords">
+<arg>${filtre rapide Résilité location}</arg>
+<arg>${filtre rapide Résilité valeur}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:57.385263" elapsed="0.001145"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${url page Baux}</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="NOT RUN" start="2024-05-16T12:57:57.386408" elapsed="0.000000"/>
+</kw>
+<kw name="tester filtre rapide" owner="Keywords">
+<arg>${filtre rapide date de fin location}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:57.386408" elapsed="0.000000"/>
+</kw>
+<kw name="tester filtre rapide" owner="Keywords">
+<arg>${filtre rapide Prochain break location}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:57.386408" elapsed="0.000000"/>
+</kw>
+<kw name="tester filtre rapide" owner="Keywords">
+<arg>${filtre rapide Résilité location}</arg>
+<status status="NOT RUN" start="2024-05-16T12:57:57.386408" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-16T12:57:53.081519" elapsed="4.304889">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</status>
+</test>
+<test id="s1-t8" name="tester recherche page Baux par actif" line="55">
+<kw name="Login" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T12:57:57.401874" level="INFO">Opening browser 'chrome' to base url 'https://test-demonext.bazimo.fr/'.</msg>
+<errors>
+<msg time="2024-05-16T12:56:54.850369" level="WARN">Error in file 'D:\projet bazimo\test_automatisé\Keywords\Keywords.robot' on line 69: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-16T12:56:54.850369" level="WARN">Error in file 'D:\projet bazimo\test_automatisé\Keywords\Keywords.robot' on line 88: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-16T12:56:54.850369" level="WARN">Error in file 'D:\projet bazimo\test_automatisé\Keywords\Keywords.robot' on line 95: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-16T12:57:24.090305" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:31.588729" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:53.036537" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB61F1EC]
+	(No symbol) [0x00007FF7DB61F0B0]
+	(No symbol) [0x00007FF7DB63A501]
+	(No symbol) [0x00007FF7DB6CB3C9]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:57:57.374600" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.0)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB8022C2+60002]
+	(No symbol) [0x00007FF7DB77CA59]
+	(No symbol) [0x00007FF7DB637EDA]
+	(No symbol) [0x00007FF7DB60D5B5]
+	(No symbol) [0x00007FF7DB6B3727]
+	(No symbol) [0x00007FF7DB6CB3A1]
+	(No symbol) [0x00007FF7DB6AC033]
+	(No symbol) [0x00007FF7DB679657]
+	(No symbol) [0x00007FF7DB67A251]
+	GetHandleVerifier [0x00007FF7DBB13E2D+3278285]
+	GetHandleVerifier [0x00007FF7DBB60190+3590448]
+	GetHandleVerifier [0x00007FF7DBB561D0+3549552]
+	GetHandleVerifier [0x00007FF7DB8B1DE6+779654]
+	(No symbol) [0x00007FF7DB787ACF]
+	(No symbol) [0x00007FF7DB782EE4]
+	(No symbol) [0x00007FF7DB783072]
+	(No symbol) [0x00007FF7DB772C4F]
+	BaseThreadInitThunk [0x00007FFFEC64257D+29]
+	RtlUserThreadStart [0x00007FFFEDE2AA48+40]
+</msg>
+<msg time="2024-05-16T12:58:00.829138" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
